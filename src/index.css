@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --pink: #e91e63;
+  --pink-glow: rgba(233, 30, 99, 0.5);
+  --blue-neon: #00e5ff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.neon-text-blue {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px var(--blue-neon), 0 0 20px var(--blue-neon);
+}
+
+.neon-border-pink {
+  border: 2px solid var(--pink);
+  box-shadow: 0 0 10px var(--pink-glow);
+}
+
+.input-dark {
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  color: #fff;
+}
+
+.input-dark:focus {
+  border-color: var(--pink);
+  outline: none;
+}
+
+.btn-pink {
+  background-color: var(--pink);
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-pink:hover {
+  background-color: #d81b60;
+  transform: scale(1.02);
+}
+
+.btn-pink:active {
+  transform: scale(0.98);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
